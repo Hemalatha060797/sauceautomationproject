@@ -97,16 +97,18 @@
     <scope>test</scope>
 </dependency>
 
-  
+  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.12.0</version>
+</dependency>
+
   
     <!-- Other dependencies -->
 
 
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.11.0</version>
-		</dependency>
+
 
 		
 		<dependency>
@@ -131,13 +133,16 @@
 			<artifactId>jcommander</artifactId>
 			<version>1.82</version>
 		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager  -->
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.5.3</version>
-		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.6.3</version>
+</dependency>
+
+
+	
 		<!--  https://mvnrepository.com/artifact/log4j/log4j  -->
 		<dependency>
 			<groupId>log4j</groupId>

@@ -82,7 +82,7 @@ public class BaseClassNew {
 	public static void setUp() throws InterruptedException {
 
      //System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");	
-		WebDriverManager.chromedriver().setup();
+		
 //        ChromeOptions options= new ChromeOptions();
 //        options.setCapability("goog:loggingPrefs","{\"performance\":\"ALL\"}");
 //		
@@ -92,7 +92,7 @@ public class BaseClassNew {
 		//ChromeOptions options= new ChromeOptions();
 	//	options.setExperimentalOption("excludeSwitches", Arrays.asList("disable-popup-blocking"));
 		
-		
+		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
 	
