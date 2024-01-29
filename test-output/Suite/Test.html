@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 18 11:03:43 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>1702 seconds (1702917 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test.TestsubmitBtnnegative()'><b>TestsubmitBtnnegative</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test<br>Test method: Verify User Registration with submit button<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>4</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test@6ea2bc93</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.validUserInvalidPwdWithNumerics()'><b>validUserInvalidPwdWithNumerics</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid Pwd With Only numerics<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>25</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOnlySpChars()'><b>invalidUserWithOnlySpChars</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Only SpChars<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogout_001Test.userLoginUsernamePwd()'><b>userLoginUsernamePwd</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogout_001Test<br>Test method: Verify Login with valid username/password<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>61</td>
+<td>com.CodeRed.TestCases.TC_LoginLogout_001Test@7f284218</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test.testFirstnameNegative()'><b>testFirstnameNegative</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test<br>Test method: Verify User Registration with invalid Email<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>4</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test@6ea2bc93</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOutPrefix()'><b>invalidUserWithOutPrefix</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Out Prefix<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test.testPasswordnegative()'><b>testPasswordnegative</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test<br>Test method: Verify User Registration with invalid password<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>28</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test@6ea2bc93</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePassword_007.updatePasswordMinLen()'><b>updatePasswordMinLen</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePassword_007<br>Test method: Password Update<br>Parameters: momag72272@newcupon.com, Test@123, Test@123, Welcome@123, Welcome@123</td>
+<td></td>
+<td>104</td>
+<td>com.CodeRed.TestCases.TC_UpdatePassword_007@f627d13</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test.userRegistration()'><b>userRegistration</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test<br>Test method: Verify Login with valid username/password<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>111</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test@4fa1c212</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPage_003Test.testAccountCheckingElements()'><b>testAccountCheckingElements</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPage_003Test<br>Test method: Verify User Registration<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>98</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPage_003Test@495ee280</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test.userLogout()'><b>userLogout</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test<br>Test method: verify Logout</td>
+<td></td>
+<td>10</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLogin_004Test@4fa1c212</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOnlyAlphanumerics()'><b>invalidUserWithOnlyAlphanumerics</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Only alphanumerics<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePassword_007.updatePasswordMaxLen()'><b>updatePasswordMaxLen</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePassword_007<br>Test method: Password Update with max length<br>Parameters: momag72272@newcupon.com, Welcome@123, Welcome@123, Abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu@1, Abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu@1, Test@123</td>
+<td></td>
+<td>101</td>
+<td>com.CodeRed.TestCases.TC_UpdatePassword_007@f627d13</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.validUserInvalidPwdWithSPChars()'><b>validUserInvalidPwdWithSPChars</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid Pwd With Only Spchars<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>26</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_HomePage_006.userLoginUsernamePwd()'><b>userLoginUsernamePwd</b><br>Test class: com.CodeRed.TestCases.TC_HomePage_006<br>Test method: Verify Login with valid username/password<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>30</td>
+<td>com.CodeRed.TestCases.TC_HomePage_006@3116c353</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePasswordNegative_008.invalidcurrentpassword()'><b>invalidcurrentpassword</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePasswordNegative_008<br>Test method: Verify with invalid current password<br>Parameters: bebix78281@getmola.com, Test@123, Test@1, Welcome@123, Welcome@123</td>
+<td></td>
+<td>98</td>
+<td>com.CodeRed.TestCases.TC_UpdatePasswordNegative_008@4e928fbf</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePasswordNegative_008.passwordmismatchofnewandcurrent()'><b>passwordmismatchofnewandcurrent</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePasswordNegative_008<br>Test method: password mismatch with new and confirm password<br>Parameters: bebix78281@getmola.com, Test@123, Test@123, Welcom@123, Welcome@1</td>
+<td></td>
+<td>94</td>
+<td>com.CodeRed.TestCases.TC_UpdatePasswordNegative_008@4e928fbf</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_PersonalDetails_009.invalidcurrentpassword()'><b>invalidcurrentpassword</b><br>Test class: com.CodeRed.TestCases.TC_PersonalDetails_009<br>Test method: Update user personal details<br>Parameters: yetam76594@jalunaki.com, Test@123, abcd, xyz, yetam76594@jalunaki.com, 1234567890, India, Test@123</td>
+<td></td>
+<td>110</td>
+<td>com.CodeRed.TestCases.TC_PersonalDetails_009@352ff4da</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogout_001Test.userLoginCaseSensitivity()'><b>userLoginCaseSensitivity</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogout_001Test<br>Test method: Verify Login for Case sensitivity<br>Parameters: moMag72272@newcupon.com, Test@123</td>
+<td></td>
+<td>54</td>
+<td>com.CodeRed.TestCases.TC_LoginLogout_001Test@7f284218</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOnlynumerics()'><b>invalidUserWithOnlynumerics</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Only numerics<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOutSuffix()'><b>invalidUserWithOutSuffix</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Out Suffix<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>27</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePassword_007.updatePasswordMaxLenAgain()'><b>updatePasswordMaxLenAgain</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePassword_007<br>Test method: Password Update with max length<br>Parameters: momag72272@newcupon.com, Welcome@123, Welcome@123, Abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu@1, Abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstu@1, Test@123</td>
+<td></td>
+<td>101</td>
+<td>com.CodeRed.TestCases.TC_UpdatePassword_007@f627d13</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogout_001Test.userLoginWhiteSpaces()'><b>userLoginWhiteSpaces</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogout_001Test<br>Test method: Verify Login for White Spaces <br>Parameters:             yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>54</td>
+<td>com.CodeRed.TestCases.TC_LoginLogout_001Test@7f284218</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPage_003Test.userRegistration()'><b>userRegistration</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPage_003Test<br>Test method: Verify User Registration<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>93</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPage_003Test@495ee280</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_PersonalDetails_009.userLogout()'><b>userLogout</b><br>Test class: com.CodeRed.TestCases.TC_PersonalDetails_009<br>Test method: verify Logout</td>
+<td></td>
+<td>10</td>
+<td>com.CodeRed.TestCases.TC_PersonalDetails_009@352ff4da</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithOnlyChars()'><b>invalidUserWithOnlyChars</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Only Chars<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.invalidUserWithNonExistingData()'><b>invalidUserWithNonExistingData</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid User With Non Existing Data<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>23</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.validUserInvalidPwdWithChars()'><b>validUserInvalidPwdWithChars</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid Pwd With Only chars<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>25</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test.testEmailNegative()'><b>testEmailNegative</b><br>Test class: com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test<br>Test method: Verify User Registration with invalid Email<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>31</td>
+<td>com.CodeRed.TestCases.TC_RegistrationPageLoginNegative_005Test@6ea2bc93</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test.validUserInvalidPwdWithAlphaNumerics()'><b>validUserInvalidPwdWithAlphaNumerics</b><br>Test class: com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test<br>Test method: verify Login with Invalid Pwd With Alpha numerics<br>Parameters: yetam76594@jalunaki.com, Test@123</td>
+<td></td>
+<td>25</td>
+<td>com.CodeRed.TestCases.TC_LoginLogoutNegative_002Test@64e7619d</td></tr>
+<tr>
+<td title='com.CodeRed.TestCases.TC_UpdatePasswordNegative_008.lengthofnewpassword()'><b>lengthofnewpassword</b><br>Test class: com.CodeRed.TestCases.TC_UpdatePasswordNegative_008<br>Test method: length of new password<br>Parameters: bebix78281@getmola.com, Test@123, Test@123, Welco@1, Welcome@123</td>
+<td></td>
+<td>101</td>
+<td>com.CodeRed.TestCases.TC_UpdatePasswordNegative_008@4e928fbf</td></tr>
+</table><p>
+</body>
+</html>
