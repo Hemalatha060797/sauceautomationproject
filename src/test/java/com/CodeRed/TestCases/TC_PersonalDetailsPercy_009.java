@@ -61,10 +61,9 @@ public class TC_PersonalDetailsPercy_009 extends BaseClassNew {
 		logger.info("Passed clicking on account settings");
 		toHold(5000);
 			
-		lp.personalDetails();
-		logger.info("Passed clicking on update password");
-		toHold(5000);
-		percy.snapshot("Personal Details Page");
+		
+		percy.screenshot("Personal Details Page");
+		
 		lp.firstName(fstname);
 		logger.info("Passed first name");
 		toHold(5000);
@@ -94,7 +93,7 @@ public class TC_PersonalDetailsPercy_009 extends BaseClassNew {
 	    lp.savechangesBtn();
 	    logger.info("Clicked on Login Button");
 	    toHold(8000);
-	    percy.snapshot("After Updation of Personal Details ");
+	    percy.screenshot("After Updation of Personal Details ");
 	   
 //			if (driver.findElement(By.xpath("//div[text()=' Password changed successfully ']")).equals(" Password changed successfully ")) {
 //				Assert.assertTrue(true);

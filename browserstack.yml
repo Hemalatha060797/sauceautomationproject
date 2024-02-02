@@ -5,12 +5,7 @@ platforms:
     osVersion: 11
     browserName: Chrome
     browserVersion: 103.0
-    
-  - os: Windows
-    osVersion: 11
-    browserName: Firefox
-    browserVersion: 102.0
-    
+       
 parallelsPerPlatform: 2
 browserstackLocal: true
 buildName: bstack-demo
@@ -20,3 +15,6 @@ networkLogs: true
 consoleLogs: info
 percy: true
 percyCaptureMode: manual
+
+testObservability: true
+
