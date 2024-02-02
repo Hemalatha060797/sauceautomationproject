@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>CodeRedDemoProject</groupId>
 	<artifactId>CodeRedDemoProject</artifactId>
@@ -10,9 +13,8 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<surefire.plugin.version>3.0.0-M5</surefire.plugin.version>
 	</properties>
-
-
-	<build>
+	
+<build>
 		<plugins>
 
 			<plugin>
@@ -22,7 +24,7 @@
 				<configuration>
 					<systemPropertyVariables>
 						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
-					</systemPropertyVariables><argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
+					</systemPropertyVariables>
                      <suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -31,7 +33,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
                <artifactId>jacoco-maven-plugin</artifactId>
-         <version>0.8.3</version>
+                <version>0.8.3</version>
 				<executions>
 
 					<execution>
@@ -52,78 +54,67 @@
 
 
 			</plugin>
-			<plugin>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.3.0</version>
-        <executions>
-          <execution>
-            <id>getClasspathFilenames</id>
-            <goals>
-              <goal>properties</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
 		</plugins>
 	</build>
 
 
+
+
 	<dependencies>
-<dependency>
-    <groupId>com.applitools</groupId>
-    <artifactId>eyes-selenium-java5</artifactId>
-    <version>5.0.2</version>
-</dependency>
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-selenium-java5</artifactId>
+			<version>5.0.2</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.percy/percy-java-selenium -->
-<dependency>
-<groupId>org.projectlombok</groupId>
-<artifactId>lombok</artifactId>
-<version>1.18.28</version>
-</dependency>
- 
-<dependency>
-<groupId>io.percy</groupId>
-<artifactId>percy-java-selenium</artifactId>
-<version>1.3.0</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/io.percy/percy-java-selenium -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.28</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/com.github.romankh3/image-comparison -->
-<dependency>
-    <groupId>com.github.romankh3</groupId>
-    <artifactId>image-comparison</artifactId>
-    <version>4.4.0</version>
-    <scope>test</scope>
-</dependency>
+		<dependency>
+			<groupId>io.percy</groupId>
+			<artifactId>percy-java-selenium</artifactId>
+			<version>1.3.0</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
-<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>gherkin</artifactId>
-    <version>5.1.0</version>
-</dependency>
-<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
-<dependency>
-    <groupId>org.hamcrest</groupId>
-    <artifactId>hamcrest</artifactId>
-    <version>2.2</version>
-    <scope>test</scope>
-</dependency>
+		<!--
+		https://mvnrepository.com/artifact/com.github.romankh3/image-comparison -->
+		<dependency>
+			<groupId>com.github.romankh3</groupId>
+			<artifactId>image-comparison</artifactId>
+			<version>4.4.0</version>
+			<scope>test</scope>
+		</dependency>
 
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.12.0</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>5.1.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest</artifactId>
+			<version>2.2</version>
+			<scope>test</scope>
+		</dependency>
 
-  
-    <!-- Other dependencies -->
-
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.12.0</version>
+		</dependency>
 
 
+		<!-- Other dependencies -->
 
-		
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -146,16 +137,16 @@
 			<artifactId>jcommander</artifactId>
 			<version>1.82</version>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.6.3</version>
-</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.6.3</version>
+		</dependency>
 
 
-	
 		<!--  https://mvnrepository.com/artifact/log4j/log4j  -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -206,12 +197,13 @@
 			<artifactId>poi</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
-<dependency>
-    <groupId>net.masterthought</groupId>
-    <artifactId>cucumber-reporting</artifactId>
-    <version>4.11.2</version>
-</dependency>
+		<!--
+		https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>4.11.2</version>
+		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
@@ -220,12 +212,12 @@
 			<version>5.2.3</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/io.percy/percy-java-selenium -->
-<dependency>
-    <groupId>io.percy</groupId>
-    <artifactId>percy-java-selenium</artifactId>
-    <version>2.0.2</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/io.percy/percy-java-selenium -->
+		<dependency>
+			<groupId>io.percy</groupId>
+			<artifactId>percy-java-selenium</artifactId>
+			<version>2.0.2</version>
+		</dependency>
 
 		<!--  https://mvnrepository.com/artifact/io.qameta.allure/allure-testng  -->
 		<dependency>
@@ -248,41 +240,18 @@
 			<version>1.2.0</version>
 		</dependency>
 
+	
 		<dependency>
-      <groupId>com.browserstack</groupId>
-      <artifactId>browserstack-java-sdk</artifactId>
-      <version>LATEST</version>
-      <scope>compile</scope>
-    </dependency>
+			<groupId>com.browserstack</groupId>
+			<artifactId>browserstack-java-sdk</artifactId>
+			<version>LATEST</version>
+			<scope>compile</scope>
+		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.jacoco/org.jacoco.agent -->
+	
 
 
 	</dependencies>
 
 
-
-
-
-
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 </project>
