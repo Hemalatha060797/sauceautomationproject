@@ -22,53 +22,55 @@ public class TC_Login_Percy extends BaseClassNew{
 		
 		
        	launchUrl();
-		logger.info("Url is Opened");
+		logger.info("Url is Opened - LoginPage");
 		maxWindow();
 		toHold(8000);
 		
 		Percy percy = new Percy(driver);
 		
 		 
+		percy.screenshot("Url Redirection");
 		
 		LoginLogoutPage lp = new LoginLogoutPage(driver);
 		lp.clickLoginButton();
-		logger.info("Clicked on Login Button");
+		logger.info("Clicked on Login Button- LoginPage");
 		toHold(8000);
 	  
-		percy.snapshot("Login Page");
+		percy.screenshot("Login Page");
 		lp.setUsername(User);
-		logger.info("Passed Username in UserField");
+		logger.info("Passed Username in UserField- LoginPage");
 	    toHold(5000);
 	    
 	    lp.setPassword(Pass);
-		logger.info("Passed Password in PwdField");
+		logger.info("Passed Password in PwdField- LoginPage");
 	    toHold(5000);
 	    
 	    lp.clickLogin();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- LoginPage");
 	    toHold(8000);
 	   
 	   
 			if (driver.getCurrentUrl().equals(rbn.getString("HomeURL"))) {
 				Assert.assertTrue(true);
-				logger.info("Login Test is Passed");
+				logger.info("Login Test is Passed- LoginPage");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("Login Test is Failed");
+				logger.info("Login Test is Failed- LoginPage");
 				toHold(8000);
 			}
 			
 			toHold(12000);
-			percy.snapshot("Home Page");
+			percy.screenshot("Home Page");
 			lp.userImage();
-			logger.info("Clicked on User Profile ");
+			logger.info("Clicked on User Profile- LoginPage ");
 			Thread.sleep(2000);
 			lp.btnLogout();
-			logger.info("Clicked on Logout");
+			logger.info("Clicked on Logout- LoginPage");
+			percy.screenshot("Logout Page");
 		//	eye.close();
 	    }	
 	

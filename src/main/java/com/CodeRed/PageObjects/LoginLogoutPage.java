@@ -41,7 +41,7 @@ public class LoginLogoutPage {
 		WebElement clkLogin;
 		
 	
-		@FindBy(xpath="//img[@class='dropdown-toggle img-fluid pointer ml-md-2 h-100 rounded-circle profile-image ng-star-inserted']")
+		@FindBy(xpath="(//div[@class='btn-group dropleft dropdown'])[2]")
 		@CacheLookup
 		WebElement userImage;
 		

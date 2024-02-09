@@ -59,7 +59,7 @@ public class PersonalDetailsPage {
 	WebElement firstname;
 	
 	//Last Name
-	@FindBy(xpath="//input[@placeholder='Last Name']")
+	@FindBy(xpath="(//input[@type='text'])[2]")
 	@CacheLookup
 	WebElement lastname;
 	

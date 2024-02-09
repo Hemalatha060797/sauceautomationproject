@@ -19,7 +19,7 @@ public class TC_UpdatePasswordPercy_007 extends BaseClassNew{
 
 	public void updatePasswordMinLen(String User, String Pass, String oldpass, String newpass, String cnfrmpass) throws InterruptedException {
 		launchUrl();
-		logger.info("Url is Opened");
+		logger.info("Url is Opened - Update Password");
 		maxWindow();
 		toHold(8000);
 		
@@ -28,87 +28,89 @@ public class TC_UpdatePasswordPercy_007 extends BaseClassNew{
 		UpdatePasswordPage lp = new UpdatePasswordPage(driver);
 		
 		lp.clickLoginButton();
-		logger.info("Clicked on Login Button");
+		logger.info("Clicked on Login Button- updatePasswordMinLen");
 		toHold(8000);
 		
 		lp.setUsername(User);
-		logger.info("Passed Username in UserField");
+		logger.info("Passed Username in UserField- updatePasswordMinLen");
 	    toHold(5000);
 	    
 	    lp.setPassword(Pass);
-		logger.info("Passed Password in PwdField");
+		logger.info("Passed Password in PwdField- updatePasswordMinLen");
 	    toHold(5000);  
 	    
 	    lp.clickLogin();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- updatePasswordMinLen");
 	    toHold(8000);
 	    
 	   
 			if (driver.getCurrentUrl().equals(rbn.getString("HomeURL"))) {
 				Assert.assertTrue(true);
-				logger.info("Login Test is Passed");
+				logger.info("Login Test is Passed -updatePasswordMinLen");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("Login Test is Failed");
+				logger.info("Login Test is Failed- updatePasswordMinLen");
 				toHold(8000);
 			}
 			
-		percy.snapshot("Home Page");
+		
 		lp.usrProfile();
-		logger.info("Passed clicking on user profile");
+		logger.info("Passed clicking on user profile - updatePasswordMinLen");
 		toHold(5000);
+		percy.screenshot("User Profile Options");
 		
 		lp.actSettings();
-		logger.info("Passed clicking on account settings");
+		logger.info("Passed clicking on account settings- updatePasswordMinLen");
 		toHold(5000);
 
-		percy.snapshot("act Settings Page");	
+		percy.screenshot("act Settings Page");	
 		
 		lp.updatePassword();
-		logger.info("Passed clicking on update password");
+		logger.info("Passed clicking on update password- updatePasswordMinLen");
 		toHold(5000);
+		percy.screenshot("Change Password Page");
 		
 		lp.oldPassword(oldpass);
-		logger.info("Passed Old Password in PwdField");
+		logger.info("Passed Old Password in PwdField- updatePasswordMinLen");
 		toHold(5000);
 		
 		lp.newPassword(newpass);
-		logger.info("Passed New Password in PwdField");
+		logger.info("Passed New Password in PwdField- updatePasswordMinLen");
 		toHold(5000);
 		
 		lp.confirmPassword(cnfrmpass);
-		logger.info("Passed confirm Password in confirmPwdField");
+		logger.info("Passed confirm Password in confirmPwdField- updatePasswordMinLen");
 		toHold(5000);
 		
 		lp.savechangesBtn();
-	    logger.info("Clicked on save button Button");
+	    logger.info("Clicked on save button Button- updatePasswordMinLen");
 	    toHold(8000);
 	    
-	    percy.snapshot("Update Password");
+	    percy.screenshot("Update Password");
 	    
 		if (driver.findElement(By.xpath("//div[text()=' Password changed successfully ']")).equals("Password changed successfully")) {
 				Assert.assertTrue(true);
-				logger.info("password changed successfully");
+				logger.info("password changed successfully- updatePasswordMinLen");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("change password is failed");
+				logger.info("change password is failed- updatePasswordMinLen");
 				toHold(8000);
 			}
 			
 			toHold(8000);
 			lp.usrProfile();
-			logger.info("Clicked on User Profile ");
+			logger.info("Clicked on User Profile - updatePasswordMinLen");
 			Thread.sleep(2000);
 			lp.btnLogout();
-			logger.info("Clicked on Logout");
+			logger.info("Clicked on Logout- updatePasswordMinLen");
 	
 	    }
 	
@@ -117,7 +119,7 @@ public class TC_UpdatePasswordPercy_007 extends BaseClassNew{
 
 	public void updatePasswordMaxLen(String User, String Pass,String oldpass, String newpass, String cnfrmpass,String testPass) throws InterruptedException {
 		launchUrl();
-		logger.info("Url is Opened");
+		logger.info("Url is Opened - updatePasswordMaxLen");
 		maxWindow();
 		toHold(8000);
 		
@@ -125,86 +127,86 @@ public class TC_UpdatePasswordPercy_007 extends BaseClassNew{
 		
 		UpdatePasswordPage lp = new UpdatePasswordPage(driver);
 		lp.clickLoginButton();
-		logger.info("Clicked on Login Button");
+		logger.info("Clicked on Login Button- updatePasswordMaxLen");
 		toHold(8000);
 		
-		percy.snapshot("Login Page");
+		
 		lp.setUsername(User);
-		logger.info("Passed Username in UserField");
+		logger.info("Passed Username in UserField- updatePasswordMaxLen");
 	    toHold(5000);
 	    
 	    lp.setPassword(Pass);
-		logger.info("Passed Password in PwdField");
+		logger.info("Passed Password in PwdField- updatePasswordMaxLen");
 	    toHold(5000);  
 	    
 	    lp.clickLogin();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- updatePasswordMaxLen");
 	    toHold(8000);
 	    
 	   
 			if (driver.getCurrentUrl().equals(rbn.getString("HomeURL"))) {
 				Assert.assertTrue(true);
-				logger.info("Login Test is Passed");
+				logger.info("Login Test is Passed- updatePasswordMaxLen");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("Login Test is Failed");
+				logger.info("Login Test is Failed- updatePasswordMaxLen");
 				toHold(8000);
 			}
 			
 		lp.usrProfile();
-		logger.info("Passed clicking on user profile");
+		logger.info("Passed clicking on user profile- updatePasswordMaxLen");
 		toHold(5000);
 		
 		lp.actSettings();
-		logger.info("Passed clicking on account settings");
+		logger.info("Passed clicking on account settings- updatePasswordMaxLen");
 		toHold(5000);
-		percy.snapshot("Acc Settings Page");	
+		
 		
 		lp.updatePassword();
-		logger.info("Passed clicking on update password");
+		logger.info("Passed clicking on update password- updatePasswordMaxLen");
 		toHold(5000);
-		percy.snapshot("Update Password Page");
 		
 		lp.oldPassword(oldpass);
-		logger.info("Passed Old Password in PwdField");
+		logger.info("Passed Old Password in PwdField- updatePasswordMaxLen");
 		toHold(5000);
 		
 		lp.newPassword(newpass);
-		logger.info("Passed New Password in PwdField");
+		logger.info("Passed New Password in PwdField- updatePasswordMaxLen");
 		toHold(5000);
 		
 		lp.confirmPassword(cnfrmpass);
-		logger.info("Passed confirm Password in confirmPwdField");
+		logger.info("Passed confirm Password in confirmPwdField- updatePasswordMaxLen");
 		toHold(5000);
-		
+	    percy.screenshot("After Password Update in Field with large data - updatePasswordMaxLen ");
+		 
 		lp.savechangesBtn();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- updatePasswordMaxLen");
 	    toHold(8000);
-	    percy.snapshot("After Password Update ");
+	   
 	   
 			if (driver.findElement(By.xpath("//div[text()=' Password changed successfully ']")).equals("Password changed successfully")) {
 				Assert.assertTrue(true);
-				logger.info("password changed successfully");
+				logger.info("password changed successfully- updatePasswordMaxLen");
 				toHold(4000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("change password is failed");
+				logger.info("change password is failed- updatePasswordMaxLen");
 				toHold(8000);
 			}
 			
 			toHold(8000);
 			lp.usrProfile();
-			logger.info("Clicked on User Profile ");
+			logger.info("Clicked on User Profile - updatePasswordMaxLen");
 			Thread.sleep(2000);
 			lp.btnLogout();
-			logger.info("Clicked on Logout");
+			logger.info("Clicked on Logout- updatePasswordMaxLen");
 	
 	    }
 	
@@ -213,89 +215,89 @@ public class TC_UpdatePasswordPercy_007 extends BaseClassNew{
 
 	public void updatePasswordMaxLenAgain(String User, String Pass, String oldpass, String newpass, String cnfrmpass,String testPass) throws InterruptedException {
 		launchUrl();
-		logger.info("Url is Opened");
+		logger.info("Url is Opened- updatePasswordMaxLenA");
 		maxWindow();
 		toHold(8000);
 		
 		UpdatePasswordPage lp = new UpdatePasswordPage(driver);
 		lp.clickLoginButton();
-		logger.info("Clicked on Login Button");
+		logger.info("Clicked on Login Button- updatePasswordMaxLenA");
 		toHold(8000);
 		
 		lp.setUsername(User);
-		logger.info("Passed Username in UserField");
+		logger.info("Passed Username in UserField- updatePasswordMaxLenA");
 	    toHold(5000);
 	    
 	    lp.setPassword(newpass);
-		logger.info("Passed Password in PwdField");
+		logger.info("Passed Password in PwdField- updatePasswordMaxLenA");
 	    toHold(5000);  
 	    
 	    lp.clickLogin();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- updatePasswordMaxLenA");
 	    toHold(8000);
 	    
 	   
 			if (driver.getCurrentUrl().equals(rbn.getString("HomeURL"))) {
 				Assert.assertTrue(true);
-				logger.info("Login Test is Passed");
+				logger.info("Login Test is Passed- updatePasswordMaxLenA");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("Login Test is Failed");
+				logger.info("Login Test is Failed- updatePasswordMaxLenA");
 				toHold(8000);
 			}
 			
 		lp.usrProfile();
-		logger.info("Passed clicking on user profile");
+		logger.info("Passed clicking on user profile- updatePasswordMaxLenA");
 		toHold(5000);
 		
 		lp.actSettings();
-		logger.info("Passed clicking on account settings");
+		logger.info("Passed clicking on account settings- updatePasswordMaxLenA");
 		toHold(5000);
 			
 		lp.updatePassword();
-		logger.info("Passed clicking on update password");
+		logger.info("Passed clicking on update password- updatePasswordMaxLenA");
 		toHold(5000);
 		
 		lp.oldPassword(newpass);
-		logger.info("Passed Old Password in PwdField");
+		logger.info("Passed Old Password in PwdField- updatePasswordMaxLenA");
 		toHold(5000);
 		
 		lp.newPassword(testPass);
-		logger.info("Passed New Password in PwdField");
+		logger.info("Passed New Password in PwdField- updatePasswordMaxLenA");
 		toHold(5000);
 		
 		lp.confirmPassword(testPass);
-		logger.info("Passed confirm Password in confirmPwdField");
+		logger.info("Passed confirm Password in confirmPwdField- updatePasswordMaxLenA");
 		toHold(5000);
 		
 		lp.savechangesBtn();
-	    logger.info("Clicked on Login Button");
+	    logger.info("Clicked on Login Button- updatePasswordMaxLenA");
 	    toHold(8000);
 	    
 	   
 			if (driver.findElement(By.xpath("//div[text()=' Password changed successfully ']")).equals("Password changed successfully")) {
 				Assert.assertTrue(true);
-				logger.info("password changed successfully");
+				logger.info("password changed successfully- updatePasswordMaxLenA");
 				toHold(8000);
 			}
 
 			else {
 
 				Assert.assertFalse(false);
-				logger.info("change password is failed");
+				logger.info("change password is failed- updatePasswordMaxLenA");
 				toHold(8000);
 			}
 			
 			toHold(8000);
 			lp.usrProfile();
-			logger.info("Clicked on User Profile ");
+			logger.info("Clicked on User Profile- updatePasswordMaxLenA ");
 			Thread.sleep(2000);
 			lp.btnLogout();
-			logger.info("Clicked on Logout");
+			logger.info("Clicked on Logout- updatePasswordMaxLenA");
 	
 	    }
 	
