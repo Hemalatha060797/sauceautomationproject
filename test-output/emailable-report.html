@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,46 +7,126 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test-0</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">123,903</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test-2</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">126,342</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Test-1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">136,074</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">386,319</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">ParallelCrossBrowserSuite</th></tr>
+<tr><td><a href="#t0">Edge Test : Latest : Windows 11</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">50,727</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Edge Test : 124 : Windows10</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">149,906</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Safari Test : latest : macOS 13)</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">81,446</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Chrome Test : 125 : Linux)</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">255,609</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">537,688</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test-0 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.CodeRed.TestCases.TC_Login_Percy</td><td><a href="#m0">userLoginUsernamePwd</a></td><td rowspan="1">1707454466119</td><td rowspan="1">91064</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test-2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.CodeRed.TestCases.TC_Login_Percy</td><td><a href="#m1">userLoginUsernamePwd</a></td><td rowspan="1">1707454469722</td><td rowspan="1">89522</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Test-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.CodeRed.TestCases.TC_Login_Percy</td><td><a href="#m2">userLoginUsernamePwd</a></td><td rowspan="1">1707454473223</td><td rowspan="1">96576</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ParallelCrossBrowserSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Edge Test : Latest : Windows 11 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.SauceDemoProject.TestScripts.TC_Login_001</td><td><a href="#m0">userLogin</a></td><td rowspan="1">1720626836633</td><td rowspan="1">34621</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Edge Test : 124 : Windows10 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.SauceDemoProject.TestScripts.TC_Login_001</td><td><a href="#m1">userLogin</a></td><td rowspan="1">1720626983753</td><td rowspan="1">38480</td></tr><tr class="passedodd"><td rowspan="1">com.SauceDemoProject.TestScripts.TC_PersonalDetails_003</td><td><a href="#m2">personalDetails</a></td><td rowspan="1">1720626887332</td><td rowspan="1">74387</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Safari Test : latest : macOS 13) &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.SauceDemoProject.TestScripts.TC_PersonalDetails_003</td><td><a href="#m3">personalDetails</a></td><td rowspan="1">1720627044709</td><td rowspan="1">59135</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Chrome Test : 125 : Linux) &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004</td><td><a href="#m4">setUp</a></td><td rowspan="1">1720627104865</td><td rowspan="1">255187</td></tr><tr><th colspan="4">Chrome Test : 125 : Linux) &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004</td><td><a href="#m5">setTestName</a></td><td rowspan="2">1720627360141</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m6">setTestName</a></td></tr><tr class="skippedeven"><td><a href="#m7">tearDown</a></td><td rowspan="1">1720627360470</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">testStatus</a></td><td rowspan="2">1720627360196</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m9">testStatus</a></td></tr><tr><th colspan="4">Chrome Test : 125 : Linux) &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004</td><td><a href="#m10">updatePassword</a></td><td rowspan="1">1720627360174</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">updatePasswordMaxLenAgain</a></td><td rowspan="1">1720627360343</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test-0</h2><h3 id="m0">com.CodeRed.TestCases.TC_Login_Percy#userLoginUsernamePwd</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>yetam76594@jalunaki.com</td><td>Test@123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//img[@class=&apos;dropdown-toggle img-fluid pointer ml-md-2 h-100 rounded-circle profile-image ng-star-inserted&apos;]&quot;}
-  (Session info: chrome=121.0.6167.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5423702cb99e917c384a4a24670da8eca3037642, findElement {using=xpath, value=//img[@class=&apos;dropdown-toggle img-fluid pointer ml-md-2 h-100 rounded-circle profile-image ng-star-inserted&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Windows\proxy\scoped_dir...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:9222}, networkConnectionEnabled: false, optimalHubUrl: hub-aps.browserstack.com, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 5423702cb99e917c384a4a24670...}
-Session ID: 5423702cb99e917c384a4a24670da8eca3037642
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy29.click(Unknown Source)
-	at com.CodeRed.PageObjects.LoginLogoutPage.userImage(LoginLogoutPage.java:70)
-	at com.CodeRed.TestCases.TC_Login_Percy.userLoginUsernamePwd(TC_Login_Percy.java:68)
+<h2>Edge Test : Latest : Windows 11</h2><h3 id="m0">com.SauceDemoProject.TestScripts.TC_Login_001#userLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Edge Test : 124 : Windows10</h2><h3 id="m1">com.SauceDemoProject.TestScripts.TC_Login_001#userLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.SauceDemoProject.TestScripts.TC_PersonalDetails_003#personalDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@1234</td><td>siga</td><td>elahan</td><td>9877667655</td><td>Welcome@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Safari Test : latest : macOS 13)</h2><h3 id="m3">com.SauceDemoProject.TestScripts.TC_PersonalDetails_003#personalDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@1234</td><td>siga</td><td>elahan</td><td>9877667655</td><td>Welcome@1234</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Chrome Test : 125 : Linux)</h2><h3 id="m4">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>chrome</td><td>125</td><td>Linux</td><td>1920x1080</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;ECCINHYD04681&apos;, ip: &apos;172.20.10.7&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at com.SauceDemoProject.Utilities.BaseClass2.setUp(BaseClass2.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:389)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 24 more
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:63)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1270)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:899)
 ... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test-2</h2><h3 id="m1">com.CodeRed.TestCases.TC_Login_Percy#userLoginUsernamePwd</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>yetam76594@jalunaki.com</td><td>Test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test-1</h2><h3 id="m2">com.CodeRed.TestCases.TC_Login_Percy#userLoginUsernamePwd</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>yetam76594@jalunaki.com</td><td>Test@123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#setTestName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#setTestName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#testStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#testStatus</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#updatePassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@1234</td><td>Welcome@1234</td><td>Welcome@123</td><td>Welcome@123</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;ECCINHYD04681&apos;, ip: &apos;172.20.10.7&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at com.SauceDemoProject.Utilities.BaseClass2.setUp(BaseClass2.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:389)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 24 more
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:63)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1270)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:899)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.SauceDemoProject.TestScripts.TC_UpdatePassword_004#updatePasswordMaxLenAgain</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>sigake1144@elahan.com</td><td>Welcome@123</td><td>Welcome@123</td><td>Welcome@1234</td><td>Welcome@1234</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;ECCINHYD04681&apos;, ip: &apos;172.20.10.7&apos;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:161)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
+	at com.SauceDemoProject.Utilities.BaseClass2.setUp(BaseClass2.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.openqa.selenium.TimeoutException: java.net.http.HttpTimeoutException: request timed out
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:389)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:355)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:89)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 24 more
+Caused by: java.net.http.HttpTimeoutException: request timed out
+	at java.net.http/jdk.internal.net.http.ResponseTimerEvent.handle(ResponseTimerEvent.java:63)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.purgeTimeoutsAndReturnNextDeadline(HttpClientImpl.java:1270)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:899)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
